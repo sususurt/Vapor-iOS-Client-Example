@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		C53AC8EE296137A50053812E /* Vapor_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC8ED296137A50053812E /* Vapor_iOSApp.swift */; };
-		C53AC8F0296137A50053812E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC8EF296137A50053812E /* ContentView.swift */; };
 		C53AC8F2296137A70053812E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53AC8F1296137A70053812E /* Assets.xcassets */; };
 		C53AC8F5296137A70053812E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53AC8F4296137A70053812E /* Preview Assets.xcassets */; };
+		C53AC8FD296137E30053812E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC8FC296137E30053812E /* Person.swift */; };
+		C53AC908296137F20053812E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC8FF296137F10053812E /* Constants.swift */; };
+		C53AC909296137F20053812E /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC900296137F10053812E /* ModalType.swift */; };
+		C53AC90A296137F20053812E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC901296137F10053812E /* NetworkManager.swift */; };
+		C53AC90B296137F20053812E /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC903296137F20053812E /* PersonListViewModel.swift */; };
+		C53AC90C296137F20053812E /* AddUpdatePersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC904296137F20053812E /* AddUpdatePersonViewModel.swift */; };
+		C53AC90D296137F20053812E /* AddUpdatePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC906296137F20053812E /* AddUpdatePerson.swift */; };
+		C53AC90E296137F20053812E /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AC907296137F20053812E /* PersonList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C53AC8EA296137A50053812E /* Vapor-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vapor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53AC8ED296137A50053812E /* Vapor_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vapor_iOSApp.swift; sourceTree = "<group>"; };
-		C53AC8EF296137A50053812E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C53AC8F1296137A70053812E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C53AC8F4296137A70053812E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C53AC8FC296137E30053812E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		C53AC8FF296137F10053812E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C53AC900296137F10053812E /* ModalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		C53AC901296137F10053812E /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C53AC903296137F20053812E /* PersonListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
+		C53AC904296137F20053812E /* AddUpdatePersonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdatePersonViewModel.swift; sourceTree = "<group>"; };
+		C53AC906296137F20053812E /* AddUpdatePerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUpdatePerson.swift; sourceTree = "<group>"; };
+		C53AC907296137F20053812E /* PersonList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		C53AC8EC296137A50053812E /* Vapor-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C53AC8FB296137E30053812E /* Model */,
+				C53AC8FE296137F10053812E /* Utility */,
+				C53AC905296137F20053812E /* View */,
+				C53AC902296137F20053812E /* View Model */,
 				C53AC8ED296137A50053812E /* Vapor_iOSApp.swift */,
-				C53AC8EF296137A50053812E /* ContentView.swift */,
 				C53AC8F1296137A70053812E /* Assets.xcassets */,
 				C53AC8F3296137A70053812E /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				C53AC8F4296137A70053812E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C53AC8FB296137E30053812E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C53AC8FC296137E30053812E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C53AC8FE296137F10053812E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C53AC8FF296137F10053812E /* Constants.swift */,
+				C53AC900296137F10053812E /* ModalType.swift */,
+				C53AC901296137F10053812E /* NetworkManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C53AC902296137F20053812E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C53AC903296137F20053812E /* PersonListViewModel.swift */,
+				C53AC904296137F20053812E /* AddUpdatePersonViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C53AC905296137F20053812E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C53AC906296137F20053812E /* AddUpdatePerson.swift */,
+				C53AC907296137F20053812E /* PersonList.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53AC8F0296137A50053812E /* ContentView.swift in Sources */,
+				C53AC90C296137F20053812E /* AddUpdatePersonViewModel.swift in Sources */,
+				C53AC90A296137F20053812E /* NetworkManager.swift in Sources */,
+				C53AC909296137F20053812E /* ModalType.swift in Sources */,
+				C53AC90B296137F20053812E /* PersonListViewModel.swift in Sources */,
+				C53AC8FD296137E30053812E /* Person.swift in Sources */,
+				C53AC90D296137F20053812E /* AddUpdatePerson.swift in Sources */,
 				C53AC8EE296137A50053812E /* Vapor_iOSApp.swift in Sources */,
+				C53AC90E296137F20053812E /* PersonList.swift in Sources */,
+				C53AC908296137F20053812E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
